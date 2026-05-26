@@ -31,7 +31,7 @@ img {
 }
 
 .site-header {
-  background: #111110;
+  background: linear-gradient(135deg, #1f7a3d, #2a903e);
   color: #f9f7f1;
   padding: 1rem 0;
 }
@@ -206,6 +206,8 @@ img {
   height: auto;
   max-height: 540px;
   object-fit: cover;
+  border: none;
+  border-radius: 0;
 }
 
 .slideshow-controls {
