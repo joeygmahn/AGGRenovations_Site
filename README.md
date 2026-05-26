@@ -1,6 +1,6 @@
 # AGG Renovations Website
 
-A simple responsive website skeleton for AGG Renovations, showcasing bespoke renovation services for kitchens, wet rooms, roofing, tiling, joinery, flooring and intricate woodwork.
+A simple responsive website skeleton for AGG Renovations, showcasing bespoke renovation services for kitchens, wet rooms/bathrooms, roofing, tiling, joinery, flooring and intricate woodwork.
 
 ## Files
 
