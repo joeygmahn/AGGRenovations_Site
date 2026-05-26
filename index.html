@@ -13,7 +13,11 @@
         <img src="images/logo/logo-banner-cropped.png" alt="AGG Renovations logo" class="brand-logo" />
         <span class="visually-hidden">AGG Renovations</span>
       </div>
-      <nav class="main-nav">
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-navigation" type="button">
+        <span class="visually-hidden">Toggle navigation</span>
+        ☰
+      </button>
+      <nav id="main-navigation" class="main-nav">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -235,6 +239,8 @@
       const nextButton = document.querySelector('.slide-btn.next');
       const prevButton = document.querySelector('.slide-btn.prev');
       const fsButton = document.querySelector('.slide-btn.fullscreen');
+      const navToggle = document.querySelector('.mobile-nav-toggle');
+      const siteHeader = document.querySelector('.site-header');
       let currentSlide = 0;
       let slideInterval = null;
 
@@ -303,6 +309,14 @@
             slideshow.classList.remove('fullscreen');
             fsButton.textContent = 'Fullscreen';
           }
+        });
+      }
+
+      if (navToggle && siteHeader) {
+        navToggle.addEventListener('click', () => {
+          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', String(!expanded));
+          siteHeader.classList.toggle('nav-open', !expanded);
         });
       }
 
