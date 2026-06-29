@@ -30,6 +30,10 @@ python3 -m http.server
 
 ## Publishing
 
-Static site — host anywhere. For GitHub Pages: push to a repo, enable Pages on
-the default branch (root). Update the `og:url`/`canonical` URLs in `index.html`
-to the live domain before going live.
+Static site — host anywhere, and it's domain-agnostic: point any domain at it
+with no file edits needed. For GitHub Pages: push to a repo and enable Pages on
+the default branch (root), then set the custom domain in the repo's Pages
+settings + DNS.
+
+Optional SEO polish once the live domain is known: uncomment/add the
+`canonical` and `og:url` tags in `index.html` (a comment in `<head>` shows where).
